@@ -2538,6 +2538,98 @@ body {
   border-radius: 4px;
 }
 
+/* @settings
+
+name: EncorePpuccin
+id: encoreppuccin-settings
+settings:
+  -
+    id: encoreppuccin-heading-colours-header
+    title: Custom heading colours
+    type: heading
+    level: 1
+    collapsed: false
+  -
+    id: ep-custom-headings
+    title: Use custom heading colours
+    description: Colour each heading level with the colours below. Overrides FastPpuccin's Colored Headings.
+    type: class-toggle
+  -
+    id: ep-h1-color
+    title: Heading One
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: '#d20f39'
+    default-dark: '#f38ba8'
+  -
+    id: ep-h2-color
+    title: Heading Two
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: '#fe640b'
+    default-dark: '#fab387'
+  -
+    id: ep-h3-color
+    title: Heading Three
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: '#40a02b'
+    default-dark: '#a6e3a1'
+  -
+    id: ep-h4-color
+    title: Heading Four
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: '#179299'
+    default-dark: '#94e2d5'
+  -
+    id: ep-h5-color
+    title: Heading Five
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: '#7287fd'
+    default-dark: '#b4befe'
+  -
+    id: ep-h6-color
+    title: Heading Six
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: '#8839ef'
+    default-dark: '#cba6f7'
+*/
+
+/* Custom heading colours (needs the Style Settings plugin) */
+body.theme-light {
+  --ep-h1-color: #d20f39;
+  --ep-h2-color: #fe640b;
+  --ep-h3-color: #40a02b;
+  --ep-h4-color: #179299;
+  --ep-h5-color: #7287fd;
+  --ep-h6-color: #8839ef;
+}
+body.theme-dark {
+  --ep-h1-color: #f38ba8;
+  --ep-h2-color: #fab387;
+  --ep-h3-color: #a6e3a1;
+  --ep-h4-color: #94e2d5;
+  --ep-h5-color: #b4befe;
+  --ep-h6-color: #cba6f7;
+}
+body.ep-custom-headings {
+  --h1-color: var(--ep-h1-color);
+  --h2-color: var(--ep-h2-color);
+  --h3-color: var(--ep-h3-color);
+  --h4-color: var(--ep-h4-color);
+  --h5-color: var(--ep-h5-color);
+  --h6-color: var(--ep-h6-color);
+}
+
 /* Heading scale */
 body {
   --h1-size: 2.25rem;
