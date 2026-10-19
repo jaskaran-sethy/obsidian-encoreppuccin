@@ -12,7 +12,7 @@ FastPpuccin's CSS is included unchanged, so its colour schemes, accents and Styl
 
 - **Divider:** `---` renders as a line with the Obsidian logo in the middle, in your accent colour.
 - **Sidebar tabs:** the sidebar tab icons become a segmented pill switcher.
-- **Highlights:** `==highlighted==` text uses Encore's deep amber style.
+- **Highlights:** `==highlighted==` text gets a soft tint of your accent colour.
 - **Embedded notes:** `![[embeds]]` show as raised cards.
 - **Headings:** Encore's larger, heavier heading scale.
 - **Empty tab:** an empty tab shows the Obsidian wireframe logo.

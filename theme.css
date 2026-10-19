@@ -2505,18 +2505,16 @@ body:not(.is-mobile) :is(.mod-left-split, .mod-right-split) .workspace-tab-heade
   display: none;
 }
 
-/* Deep amber highlights */
-body {
-  --highlight-hue: 37;
-}
+/* Highlights: a soft tint of the accent colour, text keeps its colour */
 .markdown-rendered mark,
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight,
 .search-result-file-matched-text {
-  background-color: hsla(var(--highlight-hue), 100%, 30%, 0.5);
-  border-top: 1px solid hsla(var(--highlight-hue), 100%, 60%, 0.15);
-  border-bottom: 1px solid hsla(var(--highlight-hue), 100%, 20%, 1);
-  color: hsla(var(--highlight-hue), 100%, 92%, 1);
+  background-color: color-mix(in srgb, var(--color-accent) 16%, transparent);
+  color: inherit;
+  border: none;
+  border-radius: 3px;
+  padding: 0 2px;
 }
 
 /* Embedded notes as raised cards */
