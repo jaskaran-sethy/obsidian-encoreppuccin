@@ -2,6 +2,10 @@
 
 An Obsidian theme that takes [FastPpuccin](https://github.com/LostViking09/obsidian-fastppuccin), a fast build of [AnuPpuccin](https://github.com/AnubisNekhet/AnuPpuccin), and adds a few UI components from [Encore](https://github.com/Carbonateb/obsidian-encore-theme).
 
+![EncorePpuccin in light mode](screenshots/light.png)
+
+![EncorePpuccin in dark mode](screenshots/dark.png)
+
 ## What's different from FastPpuccin
 
 FastPpuccin's CSS is included unchanged, so its colour schemes, accents and Style Settings options still work. On top of it, EncorePpuccin adds these components from Encore, recoloured to use FastPpuccin's palette:
