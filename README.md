@@ -12,7 +12,7 @@ FastPpuccin's CSS is included unchanged, so its colour schemes, accents and Styl
 - **Embedded notes:** `![[embeds]]` show as raised cards.
 - **Headings:** Encore's larger, heavier heading scale.
 - **Empty tab:** an empty tab shows the Obsidian wireframe logo.
-- **Heading colours:** headings use shades of Obsidian's purple, from H1 to H6. To change them, install Style Settings, open the **EncorePpuccin** section, and pick a colour for each level in light and dark mode. Turn on **Turn off custom heading colours** to go back to FastPpuccin's.
+- **Heading colours:** H1 uses your accent colour (Obsidian's purple by default), and each lower level blends further towards the body text colour. Change the accent and the headings follow. To set your own colours, install Style Settings, open the **EncorePpuccin** section, and pick a colour for each level in light and dark mode. Turn on **Turn off custom heading colours** to go back to FastPpuccin's.
 
 Everything else, including tabs, the status bar, the command palette, blockquotes and tooltips, looks the same as in FastPpuccin.
 

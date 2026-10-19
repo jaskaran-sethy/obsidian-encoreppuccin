@@ -2552,7 +2552,7 @@ settings:
   -
     id: ep-plain-headings
     title: Turn off custom heading colours
-    description: Headings use the colours below by default. Turn this on to go back to FastPpuccin's heading colours.
+    description: By default, H1 uses your accent colour and lower levels blend towards the text colour. Turn this on to go back to FastPpuccin's heading colours.
     type: class-toggle
   -
     id: ep-h1-color
@@ -2560,66 +2560,60 @@ settings:
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: '#4219c8'
-    default-dark: '#ae99f5'
+    default-light: '#8b6cef'
+    default-dark: '#8b6cef'
   -
     id: ep-h2-color
     title: Heading Two
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: '#461ad5'
-    default-dark: '#a38bf4'
+    default-light: '#8268db'
+    default-dark: '#947bf0'
   -
     id: ep-h3-color
     title: Heading Three
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: '#4a1ce3'
-    default-dark: '#987df2'
+    default-light: '#7863c7'
+    default-dark: '#9d8af1'
   -
     id: ep-h4-color
     title: Heading Four
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: '#552ae5'
-    default-dark: '#8d6ff1'
+    default-light: '#6f5fb3'
+    default-dark: '#a699f2'
   -
     id: ep-h5-color
     title: Heading Five
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: '#6037e6'
-    default-dark: '#8261ef'
+    default-light: '#655b9f'
+    default-dark: '#aea8f3'
   -
     id: ep-h6-color
     title: Heading Six
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: '#6b45e8'
-    default-dark: '#7753ee'
+    default-light: '#5c568a'
+    default-dark: '#b7b7f4'
 */
 
-/* Custom heading colours: purple ramp by default, editable in Style Settings */
-body.theme-light {
-  --ep-h1-color: #4219c8;
-  --ep-h2-color: #461ad5;
-  --ep-h3-color: #4a1ce3;
-  --ep-h4-color: #552ae5;
-  --ep-h5-color: #6037e6;
-  --ep-h6-color: #6b45e8;
-}
-body.theme-dark {
-  --ep-h1-color: #ae99f5;
-  --ep-h2-color: #a38bf4;
-  --ep-h3-color: #987df2;
-  --ep-h4-color: #8d6ff1;
-  --ep-h5-color: #8261ef;
-  --ep-h6-color: #7753ee;
+/* Custom heading colours: H1 is the accent colour, and each lower level
+   blends further towards the body text colour. Follows your accent setting;
+   Style Settings colour pickers override these. */
+body {
+  --ep-h1-color: color-mix(in srgb, var(--color-accent) 100%, var(--text-normal));
+  --ep-h2-color: color-mix(in srgb, var(--color-accent) 85%, var(--text-normal));
+  --ep-h3-color: color-mix(in srgb, var(--color-accent) 70%, var(--text-normal));
+  --ep-h4-color: color-mix(in srgb, var(--color-accent) 55%, var(--text-normal));
+  --ep-h5-color: color-mix(in srgb, var(--color-accent) 40%, var(--text-normal));
+  --ep-h6-color: color-mix(in srgb, var(--color-accent) 25%, var(--text-normal));
 }
 body:not(.ep-plain-headings) {
   --h1-color: var(--ep-h1-color);
