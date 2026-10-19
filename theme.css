@@ -2550,9 +2550,9 @@ settings:
     level: 1
     collapsed: false
   -
-    id: ep-custom-headings
-    title: Use custom heading colours
-    description: Colour each heading level with the colours below. Overrides FastPpuccin's Colored Headings.
+    id: ep-plain-headings
+    title: Turn off custom heading colours
+    description: Headings use the colours below by default. Turn this on to go back to FastPpuccin's heading colours.
     type: class-toggle
   -
     id: ep-h1-color
@@ -2560,68 +2560,68 @@ settings:
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: '#d20f39'
-    default-dark: '#f38ba8'
+    default-light: '#4219c8'
+    default-dark: '#ae99f5'
   -
     id: ep-h2-color
     title: Heading Two
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: '#fe640b'
-    default-dark: '#fab387'
+    default-light: '#461ad5'
+    default-dark: '#a38bf4'
   -
     id: ep-h3-color
     title: Heading Three
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: '#40a02b'
-    default-dark: '#a6e3a1'
+    default-light: '#4a1ce3'
+    default-dark: '#987df2'
   -
     id: ep-h4-color
     title: Heading Four
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: '#179299'
-    default-dark: '#94e2d5'
+    default-light: '#552ae5'
+    default-dark: '#8d6ff1'
   -
     id: ep-h5-color
     title: Heading Five
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: '#7287fd'
-    default-dark: '#b4befe'
+    default-light: '#6037e6'
+    default-dark: '#8261ef'
   -
     id: ep-h6-color
     title: Heading Six
     type: variable-themed-color
     opacity: false
     format: hex
-    default-light: '#8839ef'
-    default-dark: '#cba6f7'
+    default-light: '#6b45e8'
+    default-dark: '#7753ee'
 */
 
-/* Custom heading colours (needs the Style Settings plugin) */
+/* Custom heading colours: purple ramp by default, editable in Style Settings */
 body.theme-light {
-  --ep-h1-color: #d20f39;
-  --ep-h2-color: #fe640b;
-  --ep-h3-color: #40a02b;
-  --ep-h4-color: #179299;
-  --ep-h5-color: #7287fd;
-  --ep-h6-color: #8839ef;
+  --ep-h1-color: #4219c8;
+  --ep-h2-color: #461ad5;
+  --ep-h3-color: #4a1ce3;
+  --ep-h4-color: #552ae5;
+  --ep-h5-color: #6037e6;
+  --ep-h6-color: #6b45e8;
 }
 body.theme-dark {
-  --ep-h1-color: #f38ba8;
-  --ep-h2-color: #fab387;
-  --ep-h3-color: #a6e3a1;
-  --ep-h4-color: #94e2d5;
-  --ep-h5-color: #b4befe;
-  --ep-h6-color: #cba6f7;
+  --ep-h1-color: #ae99f5;
+  --ep-h2-color: #a38bf4;
+  --ep-h3-color: #987df2;
+  --ep-h4-color: #8d6ff1;
+  --ep-h5-color: #8261ef;
+  --ep-h6-color: #7753ee;
 }
-body.ep-custom-headings {
+body:not(.ep-plain-headings) {
   --h1-color: var(--ep-h1-color);
   --h2-color: var(--ep-h2-color);
   --h3-color: var(--ep-h3-color);
