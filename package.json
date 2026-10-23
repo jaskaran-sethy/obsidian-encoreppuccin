@@ -1,0 +1,11 @@
+{
+  "name": "obsidian-encoreppuccin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "lightningcss": "1.33.0"
+  }
+}

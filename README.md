@@ -37,6 +37,18 @@ To pick a flavour (Latte, Frappé, Macchiato, Mocha) or accent colour, install t
 
 ## License
 
-EncorePpuccin is licensed under the [GNU General Public License v3.0](LICENSE), as are FastPpuccin and AnuPpuccin. The parts adapted from Encore are used under the MIT License, and their copyright notice is kept in `theme.css`.
+EncorePpuccin is licensed under the [GNU General Public License v3.0](LICENSE), as are FastPpuccin and AnuPpuccin. The parts adapted from Encore are used under the MIT License, and their copyright notice is kept in `theme.css` and `src/theme.css`.
 
-Changes from FastPpuccin (2026-10-20): added the Encore-derived section at the end of `theme.css`, described above. FastPpuccin's own code is unmodified.
+Changes from FastPpuccin:
+
+- 2026-10-20: added the Encore-derived section at the end of the stylesheet, described above.
+- 2026-10-24: removed every `!important`, reformatted the code, dropped commented-out code and two `--input-shadow` declarations that browsers already ignored as invalid, and merged the repeated custom-checkbox label placement into one rule. The theme looks the same.
+
+## Building
+
+The readable source is `src/theme.css`. The released `theme.css` is a minified build of it that keeps the licence notices and the Style Settings blocks. After editing the source, run:
+
+```bash
+npm install
+npm run build
+```
